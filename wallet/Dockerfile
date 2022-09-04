@@ -28,7 +28,7 @@ WORKDIR /home/vips-wallet
 
 
 RUN npm install -g cordova@8.0.0
-RUN npm install
+RUN npm install --production
 RUN cordova prepare
 
 
