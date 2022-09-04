@@ -15,9 +15,6 @@ RUN set -x \
  && apt clean \
  && apt autoremove
 
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - \
-	&& apt install -y nodejs
-
 RUN git config --global url."https://".insteadOf git://
 
 WORKDIR /home
